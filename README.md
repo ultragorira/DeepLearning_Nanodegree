@@ -8,4 +8,3 @@ Project to build:
 3. Generate TV Scripts (RNN)
 4. Generate Faces (GAN)
 5. Deploy a Sentiment Analysis Model (own PyTorch sentiment analysis model and gateway for accessing this model from a website)
-6. 
