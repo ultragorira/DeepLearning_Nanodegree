@@ -1,0 +1,6 @@
+The number of columns in the left matrix must equal the number of rows in the right matrix.
+The answer matrix always has the same number of rows as the left matrix and the same number of columns as the right matrix.
+Order matters. Multiplying A•B is not the same as multiplying B•A.
+Data in the left matrix should be arranged as rows., while data in the right matrix should be arranged as columns.
+
+You can safely use a transpose in a matrix multiplication if the data in both of the original matrices is arranged as rows. 
