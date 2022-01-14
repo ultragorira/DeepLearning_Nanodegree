@@ -1,0 +1,14 @@
+14012022
+
+Concepts reviewed:
+
+Training and Testing Sets = Training model and use Testing to verify how good model performs. You never use testing data to train the model. 
+Overfitting and Underfitting => Underfitting means the model is too simplistic and tend to oversimplifed the problem. Called also error due to bias. 
+Overfittin is the opposite. Model is way too specific and performs pefectly on training set but on testing it wil fail as it cannot generalize that well. Called also error due to variance. 
+Early Stopping => We do gradient descent until the testing error stops and starts increasing. That is the right spot and called early stopping. 
+Regularization (L1 and L2) => T heproblem is that large coefficients are leading to it.We want to penalize in our error function large weights by either having a sum of the absolute values of the weights multiplied by lambda or the sum of the squares mulitplied by lambda. 
+The first approach is called L1 Regularization. L1 tends to result in sparse vectors means that small weights tend to go to zero. Also this is good if we want to reduce the number of weights and have a small set. For feature selection is good because we can choose the most important ones and turn the rest to zero.
+The second approach is called L2 Regularization and it is good for training purposes. 
+L2 does not favor sparse vectors since it tries to mantain all the weights homogeneously small. 
+
+Dropout => a parameter given when training. e.g. 0.2 means 20% of the nodes will be turned off at each epoch. Some nodes may be never turned off and some more than others but in average each node will be turned off equally.
