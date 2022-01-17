@@ -12,3 +12,25 @@ The second approach is called L2 Regularization and it is good for training purp
 L2 does not favor sparse vectors since it tries to mantain all the weights homogeneously small. 
 
 Dropout => a parameter given when training. e.g. 0.2 means 20% of the nodes will be turned off at each epoch. Some nodes may be never turned off and some more than others but in average each node will be turned off equally.
+
+15012022
+
+Local Minima => When there are multiple low points and gradient descent may end up not at the lowest point but the lowest local point.
+To avoid this we can do a random restart from different positions and do gradient descent from all of them. 
+Momentum => Another way to avoid local minima. The general idea is that the step to take will be an average of previous steps. Previous step multiplied by 1, previous one by Beta, previous one By Beta squared etc.. 
+Vanish gradient problem => The sigmoid function gets pretty flat on the sides, so when calculating the derivatives at a point fat to right or left, the derivative is almost zero. 
+This is a problem because the derivative is what tells you where to move towards and it would be very tiny steps.
+
+Hyperbolic Tangent Function => Another activation function. e^x - e^-x/e^x+ e^x.
+The values returned are between -1 and 1. 
+
+ReLU => Rectified Linear Unit. Simple activation function. It return x if x is positive, if x is negative returns 0. ReLU is often used instead of Sigmoid. 
+
+Stochastic gradient descent => If the data is well-distributed we can subset the data and run each subset throught the network, calculate the error and backpropagate. Then you repeat for next subset. 
+Each step (epoch) may be less accurate than running once with all the data but in practice it is better to take a bunch of slightly inaccurate steps than take only one good one. 
+
+Learning Rate => If learning rate is too big, you take too big steps. Too low learning rate will lead to too slow model and training. 
+As a rule of thumb if the model is not working, you should decrease the learning rate. 
+
+
+
